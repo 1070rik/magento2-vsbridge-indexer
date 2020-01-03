@@ -60,6 +60,7 @@ class TierPrices
             'cust_group' => 'customer_group_id',
             'price_qty' => 'qty',
             'price' => 'value',
+            'percentage' => 'percentage_value',
             $linkField => $linkField,
         ];
 
@@ -94,6 +95,7 @@ class TierPrices
                     : (int)$row['cust_group'],
                 'price_qty' => (float)$row['price_qty'],
                 'price' => (float)$row['price'],
+                'percentage' => (float)$row['percentage'],
                 'website_price' => (float)$row['price'],
             ];
         }

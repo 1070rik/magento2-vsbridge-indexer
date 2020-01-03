@@ -133,6 +133,7 @@ class TierPriceProcessor
         return [
             'customer_group_id' => (int) $productTierPrice['cust_group'],
             'value' => (float) $productTierPrice['price'],
+            'percentage' => (float) $productTierPrice['percentage'],
             'qty' => (float) $productTierPrice['price_qty'],
             'extension_attributes' => ['website_id' => (int) $productTierPrice['website_id']],
         ];
